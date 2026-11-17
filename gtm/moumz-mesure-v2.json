@@ -1,0 +1,1574 @@
+{
+ "exportFormatVersion": 2,
+ "exportTime": "2026-11-17 10:40:00",
+ "containerVersion": {
+  "path": "accounts/6302768812/containers/224269921/versions/0",
+  "accountId": "6302768812",
+  "containerId": "224269921",
+  "containerVersionId": "0",
+  "container": {
+   "accountId": "6302768812",
+   "containerId": "224269921",
+   "path": "accounts/6302768812/containers/224269921",
+   "name": "www.moumz.fr",
+   "publicId": "GTM-NZQVJP84",
+   "usageContext": [
+    "WEB"
+   ]
+  },
+  "tag": [
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "tagId": "125",
+    "name": "GA4 - Configuration",
+    "type": "googtag",
+    "parameter": [
+     {
+      "type": "TEMPLATE",
+      "key": "tagId",
+      "value": "{{GA4 - ID de mesure}}"
+     },
+     {
+      "type": "LIST",
+      "key": "configSettingsTable",
+      "list": [
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "traffic_type"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{JS - Trafic interne}}"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "type": "LIST",
+      "key": "eventSettingsTable",
+      "list": [
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "page_type"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{JS - Type de page}}"
+         }
+        ]
+       },
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "article_category"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{JS - Catégorie d'article}}"
+         }
+        ]
+       },
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "linked_service"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{JS - Service lié}}"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "firingTriggerId": [
+     "114"
+    ],
+    "parentFolderId": "102",
+    "tagFiringOption": "ONCE_PER_LOAD",
+    "monitoringMetadata": {
+     "type": "MAP"
+    },
+    "consentSettings": {
+     "consentStatus": "NEEDED",
+     "consentType": {
+      "type": "LIST",
+      "list": [
+       {
+        "type": "TEMPLATE",
+        "value": "analytics_storage"
+       }
+      ]
+     }
+    }
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "tagId": "126",
+    "name": "GA4 - generate_lead (formulaire envoyé)",
+    "type": "gaawe",
+    "parameter": [
+     {
+      "type": "BOOLEAN",
+      "key": "sendEcommerceData",
+      "value": "false"
+     },
+     {
+      "type": "LIST",
+      "key": "eventSettingsTable",
+      "list": [
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "form_name"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "Contact moumz"
+         }
+        ]
+       },
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "page_type"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{JS - Type de page}}"
+         }
+        ]
+       },
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "article_category"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{JS - Catégorie d'article}}"
+         }
+        ]
+       },
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "linked_service"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{JS - Service lié}}"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "eventName",
+      "value": "generate_lead"
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "measurementIdOverride",
+      "value": "{{GA4 - ID de mesure}}"
+     }
+    ],
+    "firingTriggerId": [
+     "117"
+    ],
+    "parentFolderId": "102",
+    "tagFiringOption": "ONCE_PER_EVENT",
+    "monitoringMetadata": {
+     "type": "MAP"
+    },
+    "consentSettings": {
+     "consentStatus": "NEEDED",
+     "consentType": {
+      "type": "LIST",
+      "list": [
+       {
+        "type": "TEMPLATE",
+        "value": "analytics_storage"
+       }
+      ]
+     }
+    }
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "tagId": "127",
+    "name": "GA4 - phone_click",
+    "type": "gaawe",
+    "parameter": [
+     {
+      "type": "BOOLEAN",
+      "key": "sendEcommerceData",
+      "value": "false"
+     },
+     {
+      "type": "LIST",
+      "key": "eventSettingsTable",
+      "list": [
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "click_location"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{JS - Emplacement du clic}}"
+         }
+        ]
+       },
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "page_type"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{JS - Type de page}}"
+         }
+        ]
+       },
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "article_category"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{JS - Catégorie d'article}}"
+         }
+        ]
+       },
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "linked_service"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{JS - Service lié}}"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "eventName",
+      "value": "phone_click"
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "measurementIdOverride",
+      "value": "{{GA4 - ID de mesure}}"
+     }
+    ],
+    "firingTriggerId": [
+     "118"
+    ],
+    "parentFolderId": "102",
+    "tagFiringOption": "ONCE_PER_EVENT",
+    "monitoringMetadata": {
+     "type": "MAP"
+    },
+    "consentSettings": {
+     "consentStatus": "NEEDED",
+     "consentType": {
+      "type": "LIST",
+      "list": [
+       {
+        "type": "TEMPLATE",
+        "value": "analytics_storage"
+       }
+      ]
+     }
+    }
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "tagId": "128",
+    "name": "GA4 - email_click",
+    "type": "gaawe",
+    "parameter": [
+     {
+      "type": "BOOLEAN",
+      "key": "sendEcommerceData",
+      "value": "false"
+     },
+     {
+      "type": "LIST",
+      "key": "eventSettingsTable",
+      "list": [
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "click_location"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{JS - Emplacement du clic}}"
+         }
+        ]
+       },
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "page_type"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{JS - Type de page}}"
+         }
+        ]
+       },
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "article_category"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{JS - Catégorie d'article}}"
+         }
+        ]
+       },
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "linked_service"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{JS - Service lié}}"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "eventName",
+      "value": "email_click"
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "measurementIdOverride",
+      "value": "{{GA4 - ID de mesure}}"
+     }
+    ],
+    "firingTriggerId": [
+     "119"
+    ],
+    "parentFolderId": "102",
+    "tagFiringOption": "ONCE_PER_EVENT",
+    "monitoringMetadata": {
+     "type": "MAP"
+    },
+    "consentSettings": {
+     "consentStatus": "NEEDED",
+     "consentType": {
+      "type": "LIST",
+      "list": [
+       {
+        "type": "TEMPLATE",
+        "value": "analytics_storage"
+       }
+      ]
+     }
+    }
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "tagId": "129",
+    "name": "GA4 - rdv_click",
+    "type": "gaawe",
+    "parameter": [
+     {
+      "type": "BOOLEAN",
+      "key": "sendEcommerceData",
+      "value": "false"
+     },
+     {
+      "type": "LIST",
+      "key": "eventSettingsTable",
+      "list": [
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "click_location"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{JS - Emplacement du clic}}"
+         }
+        ]
+       },
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "page_type"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{JS - Type de page}}"
+         }
+        ]
+       },
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "article_category"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{JS - Catégorie d'article}}"
+         }
+        ]
+       },
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "linked_service"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{JS - Service lié}}"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "eventName",
+      "value": "rdv_click"
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "measurementIdOverride",
+      "value": "{{GA4 - ID de mesure}}"
+     }
+    ],
+    "firingTriggerId": [
+     "120"
+    ],
+    "parentFolderId": "102",
+    "tagFiringOption": "ONCE_PER_EVENT",
+    "monitoringMetadata": {
+     "type": "MAP"
+    },
+    "consentSettings": {
+     "consentStatus": "NEEDED",
+     "consentType": {
+      "type": "LIST",
+      "list": [
+       {
+        "type": "TEMPLATE",
+        "value": "analytics_storage"
+       }
+      ]
+     }
+    }
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "tagId": "130",
+    "name": "GA4 - cta_click",
+    "type": "gaawe",
+    "parameter": [
+     {
+      "type": "BOOLEAN",
+      "key": "sendEcommerceData",
+      "value": "false"
+     },
+     {
+      "type": "LIST",
+      "key": "eventSettingsTable",
+      "list": [
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "click_location"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{JS - Emplacement du clic}}"
+         }
+        ]
+       },
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "link_destination"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{JS - Destination du clic}}"
+         }
+        ]
+       },
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "link_text"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{Click Text}}"
+         }
+        ]
+       },
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "page_type"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{JS - Type de page}}"
+         }
+        ]
+       },
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "article_category"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{JS - Catégorie d'article}}"
+         }
+        ]
+       },
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "linked_service"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{JS - Service lié}}"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "eventName",
+      "value": "cta_click"
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "measurementIdOverride",
+      "value": "{{GA4 - ID de mesure}}"
+     }
+    ],
+    "firingTriggerId": [
+     "121"
+    ],
+    "parentFolderId": "102",
+    "tagFiringOption": "ONCE_PER_EVENT",
+    "monitoringMetadata": {
+     "type": "MAP"
+    },
+    "consentSettings": {
+     "consentStatus": "NEEDED",
+     "consentType": {
+      "type": "LIST",
+      "list": [
+       {
+        "type": "TEMPLATE",
+        "value": "analytics_storage"
+       }
+      ]
+     }
+    }
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "tagId": "131",
+    "name": "GA4 - article_progress",
+    "type": "gaawe",
+    "parameter": [
+     {
+      "type": "BOOLEAN",
+      "key": "sendEcommerceData",
+      "value": "false"
+     },
+     {
+      "type": "LIST",
+      "key": "eventSettingsTable",
+      "list": [
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "percent"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{DLV - Article pourcentage}}"
+         }
+        ]
+       },
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "page_type"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{JS - Type de page}}"
+         }
+        ]
+       },
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "article_category"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{JS - Catégorie d'article}}"
+         }
+        ]
+       },
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "linked_service"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{JS - Service lié}}"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "eventName",
+      "value": "article_progress"
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "measurementIdOverride",
+      "value": "{{GA4 - ID de mesure}}"
+     }
+    ],
+    "firingTriggerId": [
+     "123"
+    ],
+    "parentFolderId": "102",
+    "tagFiringOption": "ONCE_PER_EVENT",
+    "monitoringMetadata": {
+     "type": "MAP"
+    },
+    "consentSettings": {
+     "consentStatus": "NEEDED",
+     "consentType": {
+      "type": "LIST",
+      "list": [
+       {
+        "type": "TEMPLATE",
+        "value": "analytics_storage"
+       }
+      ]
+     }
+    }
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "tagId": "132",
+    "name": "GA4 - article_read",
+    "type": "gaawe",
+    "parameter": [
+     {
+      "type": "BOOLEAN",
+      "key": "sendEcommerceData",
+      "value": "false"
+     },
+     {
+      "type": "LIST",
+      "key": "eventSettingsTable",
+      "list": [
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "reading_seconds"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{DLV - Article secondes}}"
+         }
+        ]
+       },
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "page_type"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{JS - Type de page}}"
+         }
+        ]
+       },
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "article_category"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{JS - Catégorie d'article}}"
+         }
+        ]
+       },
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "linked_service"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{JS - Service lié}}"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "eventName",
+      "value": "article_read"
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "measurementIdOverride",
+      "value": "{{GA4 - ID de mesure}}"
+     }
+    ],
+    "firingTriggerId": [
+     "124"
+    ],
+    "parentFolderId": "102",
+    "tagFiringOption": "ONCE_PER_EVENT",
+    "monitoringMetadata": {
+     "type": "MAP"
+    },
+    "consentSettings": {
+     "consentStatus": "NEEDED",
+     "consentType": {
+      "type": "LIST",
+      "list": [
+       {
+        "type": "TEMPLATE",
+        "value": "analytics_storage"
+       }
+      ]
+     }
+    }
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "tagId": "133",
+    "name": "Site - Suivi de lecture d'article",
+    "type": "html",
+    "parameter": [
+     {
+      "type": "TEMPLATE",
+      "key": "html",
+      "value": "<script>\n(function () {\n  // Mesure la lecture du texte de l'article (.post-body_rich), pas de la page entière.\n  // article_progress : 25, 50, 75, 100 %. article_read : 75 % du texte atteint et 30 s de présence active.\n  var body = document.querySelector('.post-body_rich'); if (!body) return;\n  var marks = [25, 50, 75, 100], sent = {}, active = 0, last = Date.now(), reached = 0, read = false;\n  window.dataLayer = window.dataLayer || [];\n  function check() {\n    var now = Date.now(); if (!document.hidden) active += now - last; last = now;\n    var r = body.getBoundingClientRect(); if (!r.height) return;\n    var p = Math.max(0, Math.min(100, (window.innerHeight - r.top) / r.height * 100));\n    if (p > reached) reached = p;\n    for (var i = 0; i < marks.length; i++) {\n      if (reached >= marks[i] && !sent[marks[i]]) { sent[marks[i]] = true; window.dataLayer.push({ event: 'article_progress', article_percent: marks[i] }); }\n    }\n    if (!read && reached >= 75 && active >= 30000) { read = true; window.dataLayer.push({ event: 'article_read', article_seconds: Math.round(active / 1000) }); }\n  }\n  window.addEventListener('scroll', check, { passive: true });\n  setInterval(check, 1000); check();\n})();\n</script>"
+     },
+     {
+      "type": "BOOLEAN",
+      "key": "supportDocumentWrite",
+      "value": "false"
+     }
+    ],
+    "firingTriggerId": [
+     "122"
+    ],
+    "parentFolderId": "106",
+    "tagFiringOption": "ONCE_PER_LOAD",
+    "monitoringMetadata": {
+     "type": "MAP"
+    },
+    "consentSettings": {
+     "consentStatus": "NOT_SET"
+    }
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "tagId": "134",
+    "name": "Hotjar - Tracking Code",
+    "type": "hjtc",
+    "parameter": [
+     {
+      "type": "TEMPLATE",
+      "key": "hotjar_site_id",
+      "value": "{{Hotjar - ID}}"
+     }
+    ],
+    "firingTriggerId": [
+     "116"
+    ],
+    "parentFolderId": "104",
+    "tagFiringOption": "ONCE_PER_LOAD",
+    "monitoringMetadata": {
+     "type": "MAP"
+    },
+    "consentSettings": {
+     "consentStatus": "NOT_SET"
+    }
+   }
+  ],
+  "trigger": [
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "triggerId": "114",
+    "name": "Consentement - Mesure accordée",
+    "type": "CUSTOM_EVENT",
+    "parentFolderId": "115",
+    "customEventFilter": [
+     {
+      "type": "EQUALS",
+      "parameter": [
+       {
+        "type": "TEMPLATE",
+        "key": "arg0",
+        "value": "{{_event}}"
+       },
+       {
+        "type": "TEMPLATE",
+        "key": "arg1",
+        "value": "mz_consent_analytics"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "triggerId": "116",
+    "name": "Consentement - Comportement accordé",
+    "type": "CUSTOM_EVENT",
+    "parentFolderId": "115",
+    "customEventFilter": [
+     {
+      "type": "EQUALS",
+      "parameter": [
+       {
+        "type": "TEMPLATE",
+        "key": "arg0",
+        "value": "{{_event}}"
+       },
+       {
+        "type": "TEMPLATE",
+        "key": "arg1",
+        "value": "mz_consent_behavior"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "triggerId": "117",
+    "name": "Page - Merci après contact",
+    "type": "PAGEVIEW",
+    "parentFolderId": "106",
+    "filter": [
+     {
+      "type": "MATCH_REGEX",
+      "parameter": [
+       {
+        "type": "TEMPLATE",
+        "key": "arg0",
+        "value": "{{Page Path}}"
+       },
+       {
+        "type": "TEMPLATE",
+        "key": "arg1",
+        "value": "^/merci/?$"
+       }
+      ]
+     },
+     {
+      "type": "CONTAINS",
+      "parameter": [
+       {
+        "type": "TEMPLATE",
+        "key": "arg0",
+        "value": "{{Referrer}}"
+       },
+       {
+        "type": "TEMPLATE",
+        "key": "arg1",
+        "value": "/contact"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "triggerId": "118",
+    "name": "Clic - Téléphone",
+    "type": "LINK_CLICK",
+    "parentFolderId": "106",
+    "filter": [
+     {
+      "type": "STARTS_WITH",
+      "parameter": [
+       {
+        "type": "TEMPLATE",
+        "key": "arg0",
+        "value": "{{Click URL}}"
+       },
+       {
+        "type": "TEMPLATE",
+        "key": "arg1",
+        "value": "tel:"
+       }
+      ]
+     }
+    ],
+    "waitForTags": {
+     "type": "BOOLEAN",
+     "value": "false"
+    },
+    "checkValidation": {
+     "type": "BOOLEAN",
+     "value": "false"
+    },
+    "waitForTagsTimeout": {
+     "type": "TEMPLATE",
+     "value": "2000"
+    },
+    "uniqueTriggerId": {
+     "type": "TEMPLATE"
+    }
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "triggerId": "119",
+    "name": "Clic - E-mail",
+    "type": "LINK_CLICK",
+    "parentFolderId": "106",
+    "filter": [
+     {
+      "type": "STARTS_WITH",
+      "parameter": [
+       {
+        "type": "TEMPLATE",
+        "key": "arg0",
+        "value": "{{Click URL}}"
+       },
+       {
+        "type": "TEMPLATE",
+        "key": "arg1",
+        "value": "mailto:"
+       }
+      ]
+     }
+    ],
+    "waitForTags": {
+     "type": "BOOLEAN",
+     "value": "false"
+    },
+    "checkValidation": {
+     "type": "BOOLEAN",
+     "value": "false"
+    },
+    "waitForTagsTimeout": {
+     "type": "TEMPLATE",
+     "value": "2000"
+    },
+    "uniqueTriggerId": {
+     "type": "TEMPLATE"
+    }
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "triggerId": "120",
+    "name": "Clic - Prise de rendez-vous",
+    "type": "LINK_CLICK",
+    "parentFolderId": "106",
+    "filter": [
+     {
+      "type": "MATCH_REGEX",
+      "parameter": [
+       {
+        "type": "TEMPLATE",
+        "key": "arg0",
+        "value": "{{Click URL}}"
+       },
+       {
+        "type": "TEMPLATE",
+        "key": "arg1",
+        "value": "calendly\\.com|calendar\\.app\\.google|calendar\\.google\\.com/calendar/appointments"
+       }
+      ]
+     }
+    ],
+    "waitForTags": {
+     "type": "BOOLEAN",
+     "value": "false"
+    },
+    "checkValidation": {
+     "type": "BOOLEAN",
+     "value": "false"
+    },
+    "waitForTagsTimeout": {
+     "type": "TEMPLATE",
+     "value": "2000"
+    },
+    "uniqueTriggerId": {
+     "type": "TEMPLATE"
+    }
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "triggerId": "121",
+    "name": "Clic - Vers contact, tarifs ou service",
+    "type": "LINK_CLICK",
+    "parentFolderId": "106",
+    "filter": [
+     {
+      "type": "MATCH_REGEX",
+      "parameter": [
+       {
+        "type": "TEMPLATE",
+        "key": "arg0",
+        "value": "{{Click URL}}"
+       },
+       {
+        "type": "TEMPLATE",
+        "key": "arg1",
+        "value": "/(contact|tarifs|creation-de-site-webflow|landing-page|refonte-de-site-web|site-shopify|optimisation-site-web|referencement-seo-geo|google-ads|audit-strategie-web)/?([?#].*)?$"
+       }
+      ]
+     }
+    ],
+    "waitForTags": {
+     "type": "BOOLEAN",
+     "value": "false"
+    },
+    "checkValidation": {
+     "type": "BOOLEAN",
+     "value": "false"
+    },
+    "waitForTagsTimeout": {
+     "type": "TEMPLATE",
+     "value": "2000"
+    },
+    "uniqueTriggerId": {
+     "type": "TEMPLATE"
+    }
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "triggerId": "122",
+    "name": "Page - Article prêt",
+    "type": "DOM_READY",
+    "parentFolderId": "106",
+    "filter": [
+     {
+      "type": "STARTS_WITH",
+      "parameter": [
+       {
+        "type": "TEMPLATE",
+        "key": "arg0",
+        "value": "{{Page Path}}"
+       },
+       {
+        "type": "TEMPLATE",
+        "key": "arg1",
+        "value": "/article/"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "triggerId": "123",
+    "name": "Article - Progression",
+    "type": "CUSTOM_EVENT",
+    "parentFolderId": "106",
+    "customEventFilter": [
+     {
+      "type": "EQUALS",
+      "parameter": [
+       {
+        "type": "TEMPLATE",
+        "key": "arg0",
+        "value": "{{_event}}"
+       },
+       {
+        "type": "TEMPLATE",
+        "key": "arg1",
+        "value": "article_progress"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "triggerId": "124",
+    "name": "Article - Lu",
+    "type": "CUSTOM_EVENT",
+    "parentFolderId": "106",
+    "customEventFilter": [
+     {
+      "type": "EQUALS",
+      "parameter": [
+       {
+        "type": "TEMPLATE",
+        "key": "arg0",
+        "value": "{{_event}}"
+       },
+       {
+        "type": "TEMPLATE",
+        "key": "arg1",
+        "value": "article_read"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "variable": [
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "variableId": "101",
+    "name": "GA4 - ID de mesure",
+    "type": "c",
+    "parameter": [
+     {
+      "type": "TEMPLATE",
+      "key": "value",
+      "value": "G-QSQEK3QB8N"
+     }
+    ],
+    "parentFolderId": "102",
+    "formatValue": {}
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "variableId": "103",
+    "name": "Hotjar - ID",
+    "type": "c",
+    "parameter": [
+     {
+      "type": "TEMPLATE",
+      "key": "value",
+      "value": "5236671"
+     }
+    ],
+    "parentFolderId": "104",
+    "formatValue": {}
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "variableId": "105",
+    "name": "DLV - Article pourcentage",
+    "type": "v",
+    "parameter": [
+     {
+      "type": "INTEGER",
+      "key": "dataLayerVersion",
+      "value": "2"
+     },
+     {
+      "type": "BOOLEAN",
+      "key": "setDefaultValue",
+      "value": "false"
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "name",
+      "value": "article_percent"
+     }
+    ],
+    "parentFolderId": "106",
+    "formatValue": {}
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "variableId": "107",
+    "name": "DLV - Article secondes",
+    "type": "v",
+    "parameter": [
+     {
+      "type": "INTEGER",
+      "key": "dataLayerVersion",
+      "value": "2"
+     },
+     {
+      "type": "BOOLEAN",
+      "key": "setDefaultValue",
+      "value": "false"
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "name",
+      "value": "article_seconds"
+     }
+    ],
+    "parentFolderId": "106",
+    "formatValue": {}
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "variableId": "108",
+    "name": "JS - Type de page",
+    "type": "jsm",
+    "parameter": [
+     {
+      "type": "TEMPLATE",
+      "key": "javascript",
+      "value": "function() {\n  var p = location.pathname.replace(/\\/+$/, '') || '/';\n  if (p === '/') return 'accueil';\n  if (/^\\/article\\//.test(p)) return 'article';\n  if (/^\\/category\\//.test(p)) return 'categorie_blog';\n  if (/^\\/projets\\//.test(p)) return 'projet';\n  if (/^\\/legales\\//.test(p)) return 'legal';\n  if (/^\\/(creation-de-site-webflow|landing-page|refonte-de-site-web|site-shopify|optimisation-site-web|referencement-seo-geo|google-ads|audit-strategie-web)$/.test(p)) return 'service';\n  var m = { '/blog': 'blog', '/realisations': 'realisations', '/tarifs': 'tarifs', '/contact': 'contact', '/merci': 'merci', '/agence': 'agence', '/moumz-en-bref': 'moumz_en_bref' };\n  return m[p] || 'autre';\n}"
+     }
+    ],
+    "parentFolderId": "106",
+    "formatValue": {}
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "variableId": "109",
+    "name": "JS - Catégorie d'article",
+    "type": "jsm",
+    "parameter": [
+     {
+      "type": "TEMPLATE",
+      "key": "javascript",
+      "value": "function() {\n  var a = document.querySelector('.section_post-hero a[href^=\"/category/\"]');\n  if (!a) return undefined;\n  return a.getAttribute('href').replace('/category/', '').replace(/\\/+$/, '');\n}"
+     }
+    ],
+    "parentFolderId": "106",
+    "formatValue": {}
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "variableId": "110",
+    "name": "JS - Service lié",
+    "type": "jsm",
+    "parameter": [
+     {
+      "type": "TEMPLATE",
+      "key": "javascript",
+      "value": "function() {\n  var p = location.pathname.replace(/\\/+$/, '');\n  if (/^\\/(creation-de-site-webflow|landing-page|refonte-de-site-web|site-shopify|optimisation-site-web|referencement-seo-geo|google-ads|audit-strategie-web)$/.test(p)) return p.slice(1);\n  var a = document.querySelector('.blog-service_component a[href]');\n  if (!a) return undefined;\n  return a.getAttribute('href').replace(/^\\//, '').replace(/\\/+$/, '');\n}"
+     }
+    ],
+    "parentFolderId": "106",
+    "formatValue": {}
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "variableId": "111",
+    "name": "JS - Emplacement du clic",
+    "type": "jsm",
+    "parameter": [
+     {
+      "type": "TEMPLATE",
+      "key": "javascript",
+      "value": "function() {\n  var el = {{Click Element}};\n  if (!el || !el.closest) return 'autre';\n  if (el.closest('.navbar')) return 'navbar';\n  if (el.closest('footer')) return 'footer';\n  if (el.closest('.blog-service_component')) return 'article_carte_service';\n  if (el.closest('.post-body_rich .post-strip_card')) return 'article_encart';\n  if (el.closest('.post-body_rich')) return 'article_texte';\n  if (el.closest('.section_post-strip')) return 'article_bandeau_fin';\n  var s = el.closest('section');\n  if (s) { var m = String(s.className).match(/section_([a-z0-9-]+)/); if (m) return m[1].replace(/-/g, '_'); }\n  return 'autre';\n}"
+     }
+    ],
+    "parentFolderId": "106",
+    "formatValue": {}
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "variableId": "112",
+    "name": "JS - Destination du clic",
+    "type": "jsm",
+    "parameter": [
+     {
+      "type": "TEMPLATE",
+      "key": "javascript",
+      "value": "function() {\n  var u = {{Click URL}} || '';\n  if (/^tel:/.test(u)) return 'telephone';\n  if (/^mailto:/.test(u)) return 'email';\n  var a = document.createElement('a'); a.href = u;\n  if (a.hostname && a.hostname !== location.hostname) return a.hostname;\n  return (a.pathname || '/').replace(/\\/+$/, '') || '/';\n}"
+     }
+    ],
+    "parentFolderId": "106",
+    "formatValue": {}
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "variableId": "113",
+    "name": "JS - Trafic interne",
+    "type": "jsm",
+    "parameter": [
+     {
+      "type": "TEMPLATE",
+      "key": "javascript",
+      "value": "function() {\n  // Visites de l'équipe : ouvrir une page avec ?mz-interne=1 pour s'exclure sur ce navigateur, ?mz-interne=0 pour revenir en arrière.\n  try {\n    var q = location.search.match(/[?&]mz-interne=([01])/);\n    if (q) { if (q[1] === '1') localStorage.setItem('mz-interne', '1'); else localStorage.removeItem('mz-interne'); }\n    if (localStorage.getItem('mz-interne') === '1') return 'internal';\n  } catch (e) {}\n  if (/webflow\\.io$/.test(location.hostname)) return 'internal';\n  return undefined;\n}"
+     }
+    ],
+    "parentFolderId": "102",
+    "formatValue": {}
+   }
+  ],
+  "folder": [
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "folderId": "102",
+    "name": "GA4"
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "folderId": "104",
+    "name": "Hotjar"
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "folderId": "106",
+    "name": "Site"
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "folderId": "115",
+    "name": "Consentement"
+   }
+  ],
+  "builtInVariable": [
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "type": "PAGE_URL",
+    "name": "Page URL"
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "type": "PAGE_HOSTNAME",
+    "name": "Page Hostname"
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "type": "PAGE_PATH",
+    "name": "Page Path"
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "type": "REFERRER",
+    "name": "Referrer"
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "type": "EVENT",
+    "name": "Event"
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "type": "CLICK_ELEMENT",
+    "name": "Click Element"
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "type": "CLICK_URL",
+    "name": "Click URL"
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "type": "CLICK_TEXT",
+    "name": "Click Text"
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "type": "CLICK_CLASSES",
+    "name": "Click Classes"
+   }
+  ]
+ }
+}
