@@ -1,0 +1,102 @@
+{
+ "exportFormatVersion": 2,
+ "exportTime": "2026-11-17 11:00:00",
+ "containerVersion": {
+  "path": "accounts/6302768812/containers/224269921/versions/0",
+  "accountId": "6302768812",
+  "containerId": "224269921",
+  "containerVersionId": "0",
+  "container": {
+   "accountId": "6302768812",
+   "containerId": "224269921",
+   "path": "accounts/6302768812/containers/224269921",
+   "name": "www.moumz.fr",
+   "publicId": "GTM-NZQVJP84",
+   "usageContext": [
+    "WEB"
+   ]
+  },
+  "tag": [
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "tagId": "201",
+    "name": "Site - Origine des demandes (champs cachés)",
+    "type": "html",
+    "parameter": [
+     {
+      "type": "TEMPLATE",
+      "key": "html",
+      "value": "<script>\n(function () {\n  // Remplit les champs cachés du formulaire de contact : [data-mz-field=\"source|landing|article\"].\n  // Ne tourne qu'après l'accord « mesure ». L'origine est gardée le temps de la visite (sessionStorage).\n  var KEY = 'mz-origine', d = null;\n  try { d = JSON.parse(sessionStorage.getItem(KEY) || 'null'); } catch (e) {}\n  function param(n) { var m = location.search.match(new RegExp('[?&]' + n + '=([^&#]+)')); return m ? decodeURIComponent(m[1].replace(/\\+/g, ' ')) : ''; }\n  if (!d) {\n    var src = param('utm_source'), med = param('utm_medium'), host = '';\n    if (document.referrer) { var a = document.createElement('a'); a.href = document.referrer; host = a.hostname; }\n    if (src) src = med ? src + ' / ' + med : src;\n    else if (param('gclid')) src = 'google / cpc';\n    else if (host && host !== location.hostname) src = host;\n    else if (!host) src = 'direct';\n    else src = 'non connue';\n    d = { source: src, landing: location.pathname, article: '' };\n  }\n  if (/^\\/article\\//.test(location.pathname)) d.article = location.pathname;\n  try { sessionStorage.setItem(KEY, JSON.stringify(d)); } catch (e) {}\n  function fill() {\n    for (var k in d) {\n      var els = document.querySelectorAll('[data-mz-field=\"' + k + '\"]');\n      for (var i = 0; i < els.length; i++) els[i].value = d[k];\n    }\n  }\n  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fill); else fill();\n})();\n</script>"
+     },
+     {
+      "type": "BOOLEAN",
+      "key": "supportDocumentWrite",
+      "value": "false"
+     }
+    ],
+    "firingTriggerId": [
+     "202"
+    ],
+    "parentFolderId": "203",
+    "tagFiringOption": "ONCE_PER_LOAD",
+    "monitoringMetadata": {
+     "type": "MAP"
+    },
+    "consentSettings": {
+     "consentStatus": "NEEDED",
+     "consentType": {
+      "type": "LIST",
+      "list": [
+       {
+        "type": "TEMPLATE",
+        "value": "analytics_storage"
+       }
+      ]
+     }
+    }
+   }
+  ],
+  "trigger": [
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "triggerId": "202",
+    "name": "Consentement - Mesure accordée",
+    "type": "CUSTOM_EVENT",
+    "parentFolderId": "204",
+    "customEventFilter": [
+     {
+      "type": "EQUALS",
+      "parameter": [
+       {
+        "type": "TEMPLATE",
+        "key": "arg0",
+        "value": "{{_event}}"
+       },
+       {
+        "type": "TEMPLATE",
+        "key": "arg1",
+        "value": "mz_consent_analytics"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "folder": [
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "folderId": "203",
+    "name": "Site"
+   },
+   {
+    "accountId": "6302768812",
+    "containerId": "224269921",
+    "folderId": "204",
+    "name": "Consentement"
+   }
+  ]
+ }
+}
